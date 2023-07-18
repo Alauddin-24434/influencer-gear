@@ -5,7 +5,7 @@
 }
 
 /* header section */
-.conatainer {
+.container {
     display: flex;
     justify-content: space-between;
     margin: 0em 7.50em;
@@ -34,10 +34,66 @@ li {
     display: flex;
     justify-content: space-between;
     margin: 3.12em 8.25em 4.31em 7.50em;
+
+}
+
+.hd-title {
+    margin-bottom: 1em;
+}
+
+.hd-description {
+    margin-bottom: 1em;
+}
+
+.primary-bg {
+    border-radius: 41px;
+    background: #E02C6D;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+    border: none;
 }
 
 .col-2 {
     background-image: url(/images/Circle\ design.svg);
     width: 27.50em;
     height: 25.80em;
+}
+
+
+.logos-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4.31em 10.31em 6.25em 10.31em;
+}
+
+/* resposive mobile  */
+@media screen and (max-width:576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hd-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
