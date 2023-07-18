@@ -84,7 +84,7 @@ main {
     width: 80%;
     margin: 0 auto;
     max-width: 1440px;
-   
+
 }
 
 main h1 {
@@ -132,7 +132,8 @@ main .collection .card .article-content p {
     /* 20.02px */
     letter-spacing: 0.252px;
 }
-main a{
+
+main a {
     display: block;
     text-align: right;
     align-items: center;
@@ -142,9 +143,46 @@ main a{
     color: rgba(224, 44, 109, 0.87);
     margin-top: 50px;
 }
-main a img{
+
+main a img {
     margin-left: 15px;
     margin-top: 15px;
+}
+
+
+
+
+.place {
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.place-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 96px;
+
+}
+
+.description-place {
+    margin: 1em 0;
+}
+
+footer {
+    width: 100%;
+    height: 14.93em;
+    background: #0A0826;
+    text-align: center;
+
+
+
+}
+
+.footer-content {
+    align-items: center;
+    padding-top: 3.20em;
+    color: #FFF;
 }
 
 /* resposive mobile  */
@@ -165,7 +203,8 @@ main a img{
         justify-content: center;
         align-items: center;
     }
-    .col-1{
+
+    .col-1 {
         align-items: center;
         justify-content: center;
         margin: auto;
@@ -189,24 +228,58 @@ main a img{
     }
 
     .col-2 {
-        margin:0 auto;
+        margin: 0 auto;
         margin-top: 30px;
         align-items: center;
         padding-right: 150px;
         background-repeat: no-repeat;
     }
-    .col-img{
+
+    .col-img {
         align-items: center;
-        
+
     }
-    .collection{
+
+    .collection {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
     }
-    .card{
+
+    .card {
         margin: auto;
+    }
+
+    .place-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-content {
+        padding: 3em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer-des {
+        font-size: 0.80rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        /* 200% */
     }
 }
