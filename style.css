@@ -62,8 +62,15 @@ li {
 
 .col-2 {
     background-image: url(/images/Circle\ design.svg);
+    height: 29.68em;
+    width: 29.68em;
+
+}
+
+.col-img {
     width: 27.50em;
     height: 25.80em;
+    padding: 1.87em 2.06em 1.87em 2px;
 }
 
 
@@ -73,13 +80,82 @@ li {
     margin: 4.31em 10.31em 6.25em 10.31em;
 }
 
+main {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+   
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+
+}
+
+.card {
+    padding: 15px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
+    transition: transform 1s;
+    height: 476px;
+    flex-shrink: 0;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card-image {
+    width: 100%;
+}
+
+main .article-content h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+main .collection .card .article-content p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143%;
+    /* 20.02px */
+    letter-spacing: 0.252px;
+}
+main a{
+    display: block;
+    text-align: right;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    margin-top: 50px;
+}
+main a img{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
 /* resposive mobile  */
 @media screen and (max-width:576px) {
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        margin: auto;
+
 
     }
 
@@ -89,6 +165,11 @@ li {
         justify-content: center;
         align-items: center;
     }
+    .col-1{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 
     .nav-bar ul {
         flex-direction: column;
@@ -96,4 +177,36 @@ li {
         align-items: center;
     }
 
+    .logos-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .logos-container img {
+        padding: 30px;
+    }
+
+    .col-2 {
+        margin:0 auto;
+        margin-top: 30px;
+        align-items: center;
+        padding-right: 150px;
+        background-repeat: no-repeat;
+    }
+    .col-img{
+        align-items: center;
+        
+    }
+    .collection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card{
+        margin: auto;
+    }
 }
