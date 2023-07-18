@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header section */
+.conatainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 7.50em;
+    margin-top: 4em;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 30px;
+
+
+}
+
+li {
+    list-style-type: none;
+
+}
+
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.hd-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.12em 8.25em 4.31em 7.50em;
+}
+
+.col-2 {
+    background-image: url(/images/Circle\ design.svg);
+    width: 27.50em;
+    height: 25.80em;
+}
